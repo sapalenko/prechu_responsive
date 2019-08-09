@@ -95,6 +95,11 @@ img {
           align-items: center;
 }
 
+.logo-link: hover {
+  border: none;
+  padding: 0;
+}
+
 .decore {
   position: absolute;
   top: -10px;
