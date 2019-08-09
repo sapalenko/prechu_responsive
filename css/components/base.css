@@ -95,9 +95,9 @@ img {
           align-items: center;
 }
 
-.logo-link: hover {
-  border: none;
-  padding: 0;
+.logo-link:hover {
+  border-bottom: none;
+  padding-bottom: 0;
 }
 
 .decore {
