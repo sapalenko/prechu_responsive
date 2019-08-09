@@ -1,9 +1,12 @@
 .grid {
+  display:-webkit-box;
+  display:-ms-flexbox;
   display:flex;
-  flex-wrap: wrap;
-  margin: 0 -10px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+      margin: 0 -20px;
 }
 
-.grid > * {
-  padding: 10px;
+.grid-item {
+  padding: 0 20px;
 }
