@@ -1,10 +1,10 @@
 .nav {
+    position: relative;
     margin: 0 0 0 -15px;
     color: #6c6c6c;
     font-size: 20px;
     font-weight: 400;
     letter-spacing: 0.2px;
-    display: none;
 }
 .nav-item {
     margin: 0 0 0 15px
@@ -14,9 +14,82 @@
     border-bottom: 3px solid #5094f2;
     padding-bottom: 17px;
 }
-/*Mobie*/
-@media (min-width: 641px) {
-    .nav {
-        display: block;
-    }
+
+.nav-menu {
+    list-style-type: none;
 }
+  
+.nav-menu-mobile {
+    display: none;
+    position: absolute;
+    top: 40px;
+    right: 0;
+    width: 100px;
+    padding-left: 0;
+    list-style-type: none;
+    background: #5094f2;
+  }
+  .nav-menu-mobile .list-item .link-item{
+    color: #fff;
+    display: inline-block;
+    padding: 10px;
+  }
+  .nav.is-active .nav-menu-mobile{
+    display: none;
+  }
+  .nav-toggle {
+    width: 50px;
+    height: 50px;
+    display: block;
+    background: #5094f2;
+    position: relative;
+  }
+  .nav-toggle span,
+  .nav-toggle span::before, 
+  .nav-toggle span::after{
+    position: absolute;
+    display: block;
+    width: 30px;
+    height: 4px;
+    background: #fff;
+    top: 50%;
+    left: 50%;
+    margin-top: -2px;
+    margin-left: -15px;
+  }
+  .nav-toggle span::before,
+  .nav-toggle span::after {
+    content: '';
+    display: block;
+    transition: 0.5s;
+  }
+  .nav-toggle span::before {
+    transform: translateY(-8px);
+  }
+  .nav-toggle span::after {
+    transform: translateY(8px);
+  }
+  .nav.is-active span {
+    height: 0;
+  }
+  .nav.is-active span::before {
+    transform: rotate(-40deg);
+  }
+  .nav.is-active span::after {
+    transform: rotate(40deg);
+  }
+  
+
+@media (min-width:640px) {
+    .nav-menu {
+      display: flex;
+    }
+    .nav-toggle {
+      display: none;
+    }
+    .nav-menu-mobile {
+      display: none;
+    } 
+    
+  }
+  

@@ -22,14 +22,45 @@
             </div>
             <div class="header-right">
               <nav class="nav is-active">
-                <a href="#" class="nav-item">Home</a>
-                <a href="#" class="nav-item is-active">Products</a>
-                <a href="#" class="nav-item">Services</a>
-                <a href="#" class="nav-item">Contact</a>
+
+                <ul class="nav-menu">
+                  <li class="nav-item">
+                    <a href="#" class="link-item">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#" class="lin-item is-active">Products</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#" class="link-item">Services</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#" class="link-item">Contact</a>
+                  </li>
+                </ul>
+
+                <div class="nav-toggle">
+                    <span></span>
+                </div>
+                    
+                  <ul class="nav-menu-mobile">
+                    <li class="nav-item">
+                      <a href="#" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#" class="nav-link">Product</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#" class="nav-link">Services</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#" class="nav-link">Contact</a>
+                    </li>
+                  </ul>
+                
               </nav>
-              <button class="button button-burger">
-                  <span class="button-text"></span>
-              </button>
+
+              
+              
             </div>
           </div>
         </div>
@@ -38,24 +69,65 @@
 <!--hero-->
         <section class="hero">
           <figure class="hero-background"><img src="images/bg.png" alt="background"></figure>
-          <figure class="hero-image-left"><img src="images/arrow-left.png" alt="left"></figure>
           <div class="container">
-            <div class="grid">
-              <div class="grid-item width-2-5">
-                <div class="hero-left">
-                  <figure class="hero-image"><img src="images/iphone.png" alt="phone"></figure>
+            <div class="swiper-container">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="grid">
+                      <div class="grid-item width-2-5">
+                        <div class="hero-left">
+                          <figure class="hero-image"><img src="images/iphone.png" alt="phone"></figure>
+                        </div>
+                      </div>
+                      <div class="grid-item width-3-5">
+                        <div class="hero-right">
+                          <h1 class="hero-title">Lorem Ipsum is simply</h1>
+                          <h3 class="hero-subtitle">dummy text of the printing & typesetting</h3>
+                          <button class="button button-primary"><svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 33 33"><g><g><path d="M32.605 16.178c0 8.833-7.16 15.993-15.993 15.993S.618 25.011.618 16.178 7.778.184 16.612.184c8.833 0 15.993 7.16 15.993 15.994zm-6.925-5.465c-.96-.956-2.862-.605-4.254.788l-6.82 6.819-3.2-3.2a2.157 2.157 0 0 0-3.05 3.05l4.385 4.384c.181.182.395.305.615.409.012.013.02.03.032.043.958.958 2.862.606 4.254-.789l7.25-7.25c1.391-1.39 1.745-3.296.788-4.254z"/></g></g></svg><span class="button-text">Sign up now</span></button>
+                        </div>
+                      </div>
+                    </div>
                 </div>
-              </div>
-              <div class="grid-item width-3-5">
-                <div class="hero-right">
-                  <h1 class="hero-title">Lorem Ipsum is simply</h1>
-                  <h3 class="hero-subtitle">dummy text of the printing & typesetting</h3>
-                  <button class="button button-primary"><svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 33 33"><g><g><path d="M32.605 16.178c0 8.833-7.16 15.993-15.993 15.993S.618 25.011.618 16.178 7.778.184 16.612.184c8.833 0 15.993 7.16 15.993 15.994zm-6.925-5.465c-.96-.956-2.862-.605-4.254.788l-6.82 6.819-3.2-3.2a2.157 2.157 0 0 0-3.05 3.05l4.385 4.384c.181.182.395.305.615.409.012.013.02.03.032.043.958.958 2.862.606 4.254-.789l7.25-7.25c1.391-1.39 1.745-3.296.788-4.254z"/></g></g></svg><span class="button-text">Sign up now</span></button>
-                </div>
+
+                <div class="swiper-slide">
+                    <div class="grid">
+                        <div class="grid-item width-2-5">
+                          <div class="hero-left">
+                            <figure class="hero-image"><img src="https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/iphone-xr-yellow-select-201809?wid=940&hei=1112&fmt=png-alpha&qlt=80&.v=1551226036826" alt="phone"></figure>
+                          </div>
+                        </div>
+                        <div class="grid-item width-3-5">
+                          <div class="hero-right">
+                            <h1 class="hero-title">Iphone XR</h1>
+                            <h3 class="hero-subtitle">dummy text of the printing & typesetting</h3>
+                            <button class="button button-primary"><svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 33 33"><g><g><path d="M32.605 16.178c0 8.833-7.16 15.993-15.993 15.993S.618 25.011.618 16.178 7.778.184 16.612.184c8.833 0 15.993 7.16 15.993 15.994zm-6.925-5.465c-.96-.956-2.862-.605-4.254.788l-6.82 6.819-3.2-3.2a2.157 2.157 0 0 0-3.05 3.05l4.385 4.384c.181.182.395.305.615.409.012.013.02.03.032.043.958.958 2.862.606 4.254-.789l7.25-7.25c1.391-1.39 1.745-3.296.788-4.254z"/></g></g></svg><span class="button-text">Sign up now</span></button>
+                          </div>
+                        </div>
+                      </div>
+                  </div>
+
+                  <div class="swiper-slide">
+                      <div class="grid">
+                          <div class="grid-item width-2-5">
+                            <div class="hero-left">
+                              <figure class="hero-image"><img src="https://appleroom.ua/wa-data/public/categories/iphonexr/iphone-xr-red.png" alt="phone"></figure>
+                            </div>
+                          </div>
+                          <div class="grid-item width-3-5">
+                            <div class="hero-right">
+                              <h1 class="hero-title">Iphone XR Red</h1>
+                              <h3 class="hero-subtitle">dummy text of the printing & typesetting</h3>
+                              <button class="button button-primary"><svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 33 33"><g><g><path d="M32.605 16.178c0 8.833-7.16 15.993-15.993 15.993S.618 25.011.618 16.178 7.778.184 16.612.184c8.833 0 15.993 7.16 15.993 15.994zm-6.925-5.465c-.96-.956-2.862-.605-4.254.788l-6.82 6.819-3.2-3.2a2.157 2.157 0 0 0-3.05 3.05l4.385 4.384c.181.182.395.305.615.409.012.013.02.03.032.043.958.958 2.862.606 4.254-.789l7.25-7.25c1.391-1.39 1.745-3.296.788-4.254z"/></g></g></svg><span class="button-text">Sign up now</span></button>
+                            </div>
+                          </div>
+                        </div>
+                    </div>
+
               </div>
             </div>
           </div>
-          <figure class="hero-image-right"><img src="images/arrow-right.png" alt="right"></figure>
+          <div class="swiper-button swiper-button-prev"></div>
+          <div class="swiper-button swiper-button-next"></div>
         </section>
 <!--section-card-->
         <section class="section section-cards">
@@ -111,10 +183,39 @@
             </div>
           </div>
         </section>
+
+<!--section-slider-->
+    <section class="section-slider">
+        <h2 class="section-title">Slide-bar</h2>
+      
+      <!-- Slider main container -->
+      <div class="swiper-container">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper">
+              <!-- Slides -->
+              <div class="swiper-slide">
+                <img src="https://www.iphones.ru/wp-content/uploads/2018/09/XR.jpg" alt="iphone">
+              </div>
+              <div class="swiper-slide">
+                <img src="https://condenast-media.gcdn.co/gq/8733bf2f9765f8e0d35f5cfc54aec3be.jpg/0aa5a062/o/w1023" alt="iphone">
+              </div>
+              <div class="swiper-slide">
+                <img src="https://as-images.apple.com/is/iphone-xr-og-201809?wid=1200&hei=630&fmt=jpeg&qlt=95&op_usm=0.5,0.5&.v=1535560276044" alt="iphone">
+              </div>
+          </div>
+          <div class="swiper-pagination"></div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+      </div>
+    </section>
 <!--footer-->
       <footer class="footer">
         <div class="footer-text">Copyright © 2012-2013 cssauthor.com</div>
       </footer>
     </div>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/js/swiper.min.js"></script>
+    <script src="js/main.js"></script>
   </body>
 </html>
